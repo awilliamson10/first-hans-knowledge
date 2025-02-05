@@ -5,8 +5,10 @@ export interface BaseGuide {
     membersOnly: boolean;
     lastUpdated: string;
     slug: string;
+    content: string;  // Add this line
 }
 
+// Rest remains the same
 export interface SkillGuide extends BaseGuide {
     category: 'skills';
     levelRequirement: number;

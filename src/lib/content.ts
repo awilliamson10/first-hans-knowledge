@@ -3,7 +3,7 @@ import { cache } from 'react'
 import { readFile, readdir } from 'fs/promises'
 import path from 'path'
 import matter from 'gray-matter'
-import { Guide, SkillGuide, QuestGuide } from './types'
+import { Guide } from './types'
 
 // Cache at build time for static generation
 export const getGuides = cache(async (type: 'skills' | 'quests'): Promise<Guide[]> => {
